@@ -1,0 +1,4 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:transplar/pertanahan
+	branch = gh-pages
