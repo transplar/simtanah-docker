@@ -2,3 +2,6 @@
 	path = frontend
 	url = git@github.com:transplar/pertanahan
 	branch = gh-pages
+[submodule "api"]
+	path = api
+	url = git@github.com:transplar/simtanah-api
