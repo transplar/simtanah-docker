@@ -2,6 +2,12 @@
 
 ## Kebutuhan Sistem
 
+**Perangkat Keras**
+- RAM: 4GB
+- CPU: dual core @2GHz
+- Storage: 20GB
+
+**Perangkat Lunak**
 - Docker
 - Docker Compose
 
