@@ -13,7 +13,7 @@ services:
     ports:
       - 5432:5432
     volumes:
-      - ./postgis_data:/var/lib/postgresql
+      - ./var/postgis_data:/var/lib/postgresql
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASS=docker
@@ -24,7 +24,7 @@ services:
     ports:
       - 9090:8080
     volumes:
-      - ./geoserver_data:/opt/geoserver/data_dir
+      - ./var/geoserver_data:/opt/geoserver/data_dir
     restart: on-failure
     depends_on:
       - postgis
