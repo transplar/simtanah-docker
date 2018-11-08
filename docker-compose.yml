@@ -25,6 +25,7 @@ services:
       - 9090:8080
     volumes:
       - ./var/geoserver_data:/opt/geoserver/data_dir
+      - ./docker/geoserver/web.xml:/usr/local/tomcat/conf/web.xml
     restart: on-failure
     depends_on:
       - postgis
