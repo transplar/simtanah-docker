@@ -1,5 +1,11 @@
 # Sistem Informasi Pertanahan DISPERKIM JABAR
 
+> **Catatan:** Sistem ini dirancang untuk berjalan secara mandiri. Pastikan bahwa port berikut ini tidak sedang dipakai oleh preses lain.
+> - 80
+> - 5432
+> - 8081
+> - 9090
+
 ## Kebutuhan Sistem
 
 **Perangkat Keras**
@@ -30,5 +36,5 @@
 - base_path: /
 
 **Main Frontend**
-- port: 8080
+- port: 80
 - base_path: /
