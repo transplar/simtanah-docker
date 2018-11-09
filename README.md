@@ -1,6 +1,6 @@
 # Sistem Informasi Pertanahan DISPERKIM JABAR
 
-> **Catatan:** Sistem ini dirancang untuk berjalan secara mandiri. Pastikan bahwa port berikut ini tidak sedang dipakai oleh preses lain.
+> **Catatan:** Sistem ini dirancang untuk berjalan secara mandiri. Pastikan bahwa port berikut ini tidak sedang dipakai oleh proses lain.
 > - 80
 > - 5432
 > - 8081
