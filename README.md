@@ -1,5 +1,7 @@
 # Sistem Informasi Pertanahan DISPERKIM JABAR
 
+[**DEMO**](http://simtanah.transplar.com)
+
 > **Catatan:** Sistem ini dirancang untuk berjalan secara mandiri. Pastikan bahwa port berikut ini tidak sedang dipakai oleh proses lain.
 > - 80
 > - 5432
