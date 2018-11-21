@@ -1,6 +1,6 @@
 [submodule "frontend"]
 	path = modules/frontend
-	url = https://github.com/transplar/pertanahan
+	url = https://github.com/transplar/simtanah-frontend
 	branch = gh-pages
 [submodule "api"]
 	path = modules/api
