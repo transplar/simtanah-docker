@@ -6,7 +6,7 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./frontend:/usr/share/nginx/html
+      - ./modules/frontend:/usr/share/nginx/html
 
   postgis:
     image: kartoza/postgis:10.0-2.4
@@ -44,7 +44,7 @@ services:
       - php
     volumes:
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
-      - ./api:/app
+      - ./modules/api:/app
 
   php:
     image: php:7.2-fpm-alpine
