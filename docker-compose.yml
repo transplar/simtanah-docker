@@ -51,5 +51,5 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - ./api:/app
+      - ./modules/api:/app
       - ./docker/php/php-override.ini:/usr/local/etc/php/conf.d/php-override.ini
