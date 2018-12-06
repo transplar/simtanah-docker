@@ -59,4 +59,5 @@ services:
     ports:
       - 8082:80
     volumes:
+      - ./docker/nginx/pictshare.conf:/etc/nginx/conf.d/default.conf
       - ./var/pictshare_data:/usr/share/nginx/html/upload
