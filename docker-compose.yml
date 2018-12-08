@@ -20,6 +20,16 @@ services:
       - POSTGRES_PASS=docker
       - POSTGRES_DBNAME=simtanah
 
+  pgadmin:
+    image: dpage/pgadmin4:3.5
+    links:
+      - postgis
+    ports:
+      - 8082:80
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=password
+
   geoserver:
     image: kartoza/geoserver:2.13.0
     ports:
