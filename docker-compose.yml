@@ -9,16 +9,14 @@ services:
       - ./modules/frontend:/usr/share/nginx/html
 
   postgis:
-    image: kartoza/postgis:10.0-2.4
+    image: mdillon/postgis:10-alpine
     ports:
       - 5432:5432
     volumes:
       - ./var/postgis_data:/var/lib/postgresql
-      - ./docker/postgis/pg_hba.conf:/etc/postgresql/10/main/pg_hba.conf.template
     environment:
       - POSTGRES_USER=docker
-      - POSTGRES_PASS=docker
-      - POSTGRES_DBNAME=simtanah
+      - POSTGRES_PASSWORD=docker
 
   pgadmin:
     image: dpage/pgadmin4:3.5
