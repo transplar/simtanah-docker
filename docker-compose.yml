@@ -55,8 +55,10 @@ services:
       - ./modules/api:/app
 
   php:
-    build: ./docker/php
-    image: php:simtanah
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile.prod
+    image: php:simtanah-prod
     ports:
       - 9000:9000
     volumes:
