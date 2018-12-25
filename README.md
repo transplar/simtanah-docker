@@ -30,8 +30,14 @@
 **PostGIS**
 - username: docker
 - password: docker
-- database: simtanah
+- database: docker
 - port: 5432
+
+**pgAdmin**
+- username: admin@localhost
+- password: password
+- port: 8083
+- path: /
 
 **RESTful API**
 - port: 8081
