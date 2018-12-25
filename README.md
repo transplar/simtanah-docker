@@ -19,6 +19,23 @@
 - Docker
 - Docker Compose
 
+## Instalasi
+```shell
+# Clone repository
+git clone https://github.com/transplar/simtanah-docker
+
+# Install submodule
+cd simtanah-docker
+git submodule update --init --recursive
+
+# Setting environment variable
+# rename and change its content based on your requirement
+mv .env.dist .env
+
+# Starting the system
+docker-compose up -d
+```
+
 ## Settingan Default
 
 **Geoserver**
