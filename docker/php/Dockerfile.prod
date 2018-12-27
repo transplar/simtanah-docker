@@ -1,3 +1,4 @@
+FROM composer:1.8 AS composer
 FROM php:7.2-fpm
 
 RUN apt-get update && apt-get install -y \
@@ -7,5 +8,9 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \
     && docker-php-ext-install pgsql pdo_pgsql zip \
     && rm -rf /var/lib/apt/list/*
+
+COPY --from=composer /usr/bin/composer /usr/bin/composer
+
+RUN composer --version && php -v
 
 WORKDIR /app
