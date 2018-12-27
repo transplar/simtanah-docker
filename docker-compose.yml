@@ -7,6 +7,7 @@ services:
       - '80:80'
     volumes:
       - ./modules/frontend:/usr/share/nginx/html
+    restart: unless-stopped
 
   postgis:
     image: mdillon/postgis:10-alpine
@@ -17,6 +18,7 @@ services:
     environment:
       - POSTGRES_USER
       - POSTGRES_PASSWORD
+    restart: unless-stopped
 
   pgadmin:
     image: dpage/pgadmin4:3.5
@@ -27,6 +29,7 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL
       - PGADMIN_DEFAULT_PASSWORD
+    restart: unless-stopped
 
   geoserver:
     image: kartoza/geoserver:2.13.0
@@ -43,6 +46,7 @@ services:
       interval: 1m30s
       timeout: 10s
       retries: 3
+    restart: unless-stopped
 
   api:
     image: nginx:stable-alpine
@@ -54,6 +58,7 @@ services:
     volumes:
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
       - ./modules/api:/app
+    restart: unless-stopped
 
   php:
     build:
